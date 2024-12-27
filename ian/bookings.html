@@ -1,0 +1,143 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+		<meta charset = "utf-8*">
+		<title>Japan Haven</title>
+		<link rel = "stylesheet" href = "CSS/REEEE.css">
+		<meta name = "description" content="This is Italian Mario Pizza">
+		<meta name = "keywords" content ="Italian Mario Pizza, Mario Pizza, Pizza">
+		<meta name = "author" content = "IRBB">		
+	</head>
+	
+
+	<body>
+		<!----Page 	Container----->
+		<div id = "Container">
+			<header>
+				<!--LOGO-->
+					<div id = "logopic">
+						<img src="img/logoo.png" alt="L">
+					</div>
+					<!--NAVIGATION-->	
+					<nav>
+						<ul>
+							<li>
+								<a href="ian.html" title = "HOME">
+								HOME
+								</a>
+							</li>
+							<li>
+								<a href="news.html" title="LATEST NEWS ABOUT US!">
+								NEWS
+								</a>
+							</li>
+							<li>
+								<a href= "menu.html" title="MENU!">
+								MENU
+								</a>
+							</li>
+							<li>
+								<a href= "about.html" title="ABOUT US!">
+								ABOUT
+								</a>
+							</li>
+							<li>
+								<a href= "location.html" title="OUR LOCATIONS!">
+								LOCATION
+								</a>
+							</li>
+							<li>
+								<a href = "bookings.html" title="BOOK NOW!" class = "active">
+								BOOKINGS
+								</a>
+							</li>
+							<li>
+								<a href= "login.html" title="LOGIN NOW!">
+								LOG IN
+								</a>
+							</li>
+						</ul>
+					</nav>
+			</header>
+		
+		<!---main content--->
+		<div>
+			<section id="page-text">
+					<h1> Request a booking </h1>
+					<p>
+						Please use the form below to submit a booking request. You will then be contacted by a staff member who will confirm your bookings.
+					</p>
+					<form action="booking.php" method="POST" id="bookingForm">
+						<p class="validation-tip">
+							* Indicates a required field.
+						</p>
+						<fieldset>
+							<legend> Contact Details</legend>
+							<div class="field">
+								<label for="name"> Name:</label>
+								<input type="text" id="name" id ="name" placeholder="e.g put your name here!" autofucus required maxlenght ="65" tabindex="1">
+							</div>
+							<div class="field">
+								<label for="phone"> Phone:</label>
+								<input type="tel" id="phone" id ="phone" placeholder="e.g. 0000-000-0000" pattern="[0-9]{4}[-]
+								[0-9]{3}[-][0-9]{4}" required title="Please provide your phone number in the following format 0000-000-000" tabindex="2">
+							</div>
+							<div class="field">
+								<label for="email"> Email:</label>
+								<input type="email" id="email" id ="email" placeholder="e.g MyEmail@example.com" 
+								required tabindex="3">
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend> Desired Services</legend>
+							<div class="field">
+								<label for="host"> Services</label>
+								<select name="host" id="host" required tabindex="4">
+									<option>Kyoto Private Custom Walking and Sightseeing Tour</option>
+									<option>Private Full Day Sightseeing Tour to Mount Fuji and Hakone</option>
+									<option>Private Highlights of Akihabara Tour</option>
+									<option>Go-Kart Shinjuku Drive Metroporitan Area</option>
+								</select>
+							</div>
+							<div class="field">
+								<label for="host"> Hosts Language:</label>
+								<select name="host" id="host" required tabindex="4">
+									<option>English</option>
+									<option>Japanese</option>
+									<option>Tagalog</option>
+									<option>Hindi</option>
+									<option>Arabic</option>
+									<option>Chinese</option>
+									<option>Korean</option>
+								</select>
+							</div>
+							<div class="field">
+								<label for="bookingTime"> booking time:</label>
+								<input type= "datetime-local" name="BookingTime" placeholder="e.g. 2022-05-24 3:08" required tabindex="6">
+							</div>	
+							<div class="field">
+								<label for="marketing">Please take this box if you are handsome/beautiful</label>
+								<input type="checkbox" name="marketing" id="marketing" value="1" tabindex="7">
+							</div>
+							<div class="field">
+							<label for="message"> Special Request:</label>
+							<textarea name="message" id="message" cols="50" rows="10"
+							placeholder="type your message here..." maxlength="250" tabindex="8" ></textarea>
+							</div>
+						</fieldset>
+						<div class="field">
+						<button type="submit" tabindex="9">Request Bookings</button>
+						</div>
+					</form>
+					
+			</section>
+			
+			<!---footer-->
+			<footer>
+				<small>&copy; 2022 Ian Reister Baragona. All Rights Reserved</small>
+			</footer>
+			
+	</div>		
+	
+</body>
+</html>
